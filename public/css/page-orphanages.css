@@ -26,9 +26,12 @@ aside p {
 
 aside footer {
     margin-top: .8rem;
+    height: 800px
 }
 
 #mapid {
+      width: 100%;
+
 
 }
 /* button */
