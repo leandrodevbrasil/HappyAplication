@@ -12,12 +12,35 @@
 
 #container {
     margin: auto;
-    padding: auto;
-    width: 90%;
+  
+    /* 112rem = 1120px*/
+    width: min(90%, 112rem);
 }
 
 .location, h1, .visit p {
     height: 16vh;
+}
+
+
+/* animações */
+
+
+#logo {
+    animation-delay: 50ms;
+}    
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+    font-size: clamp(4rem, 8vw, 8.4rem);
+    font-weight: bold;
+}
+
+.visit p {
+    animation-delay: 200ms;
 }
 
 .visit a {
@@ -32,15 +55,74 @@
     align-items: center;
     justify-content: center;
 
-    margin: 0 auto;
+    margin: auto;
 
-    transition: background .2s;
+    transition: background 200ms;
+    animation-delay: 250ms;
 }
 
 /* hover significa que o mouse esta em cima dele */
 
 .visit a.hover {
     background: #96feff;
+}
 
+/* destop version */
+@media (min-width: 760px) {
 
+    #container {
+        padding: 5rem 2rem;
+        /* shorthand backgroud? image repeat posticion / size */
+        background: url('../images/bg.svg') no-repeat 80% / clamp(30rem, 54vw, 56rem);
+        
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .location, h1, .visit p {
+        height: initial;
+        text-align: initial;
+    }
+
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    /* 
+    Epecificidade "main ha1" maior que "h1"
+                  "#h1" maior que "main ha1"  
+    */
+    main h1 {
+        font-weight: bold;
+        line-height: .88;
+
+        font-size: clamp(4rem, 8vw, 8.4rem);
+        
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+     
+
+        width: min(300px, 80%);
+    }
+
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+
+    }
+
+    .visit a {
+        margin: initial;
+    }
 }

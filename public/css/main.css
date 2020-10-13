@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,33 +17,6 @@ body {
 
 body, input, button, textarea {
 
-    font-size: 400 18rem/1 
+    font-size: 400 18rem/1; 
     font: 'Nunito', sans-serif;
-}
-
-
-
-
-/* animações */
-
-
-#logo {
-    animation-delay: 50ms;
-}    
-
-
-#location {
-    animation-delay: 100ms;
-}
-
-main h1 {
-    animation-delay: 150ms;
-}
-
-.visit p {
-    animation-delay: 200ms;
-}
-
-.visit a {
-    animation-delay: 250ms;
 }
