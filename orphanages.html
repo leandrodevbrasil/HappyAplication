@@ -6,17 +6,17 @@
     <title>Localize um orfanato | Happy</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
 
     <!-- Make sure you put this AFTER Leaflet's CSS -->
- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
- integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
- crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
     <link rel="icon" href="./public/images/logo-icon.png" />
     <link rel="stylesheet" href="./public/css/main.css" />
-    <link rel="stylesheet" href="./public/css/page-orphanages.css" />
+    <link rel="stylesheet" href="./public/css/pages-orphanages.css" />
     <link rel="stylesheet" href="./public/css/animations.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,800&display=swap"
@@ -24,7 +24,7 @@
     />
   </head>
   <body>
-    <div id="page-orphanages">
+    <div id="pages-orphanages">
       <aside class="animate-right">
         <header>
           <img src="./public/images/map-marker.svg" alt="Happy" />
@@ -40,11 +40,16 @@
         </footer>
       </aside>
 
-      <a href="create-orphanage.html" class="create-orphanage" title="Cadastre um orfanato">
-          <img src="./public/images/plus.svg" alt="Criar orfanato">
+      <a 
+         href="create-orphanage.html" 
+         class="create-orphanage"
+         title="Cadastre um orfanato"
+      >
+         <img src="./public/images/plus.svg" alt="Criar orfanato">
       </a>
 
-      <div id="mapid"></div>
+      <div id="mapid" class="animate-appear"></div>
+
 
     </div>
 
